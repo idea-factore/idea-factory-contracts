@@ -29,7 +29,7 @@ const { etherscan } = require("./secrets.json");
 
 //forgot to change this. Whoever took advantage, you're mean :(
 const { privateKey } = require("./secrets.json");
-const defaultNetwork = "kovan";
+const defaultNetwork = "matic";
 
 function mnemonic() {
   try {
@@ -37,6 +37,7 @@ function mnemonic() {
   } catch (e) {
     if (defaultNetwork !== "localhost") {
       console.log("☢️ WARNING: No mnemonic file created for a deploy account. Try `yarn run generate` and then `yarn run account`.")
+
     }
   }
   return "";
@@ -66,7 +67,7 @@ module.exports = {
     },
     kovan: {
       url: "https://eth-kovan.alchemyapi.io/v2/MXViLblblc2XCNPjX4FMsvJ2wXDNgIRB", //<---- YOUR INFURA ID! (or it won't work)
-      accounts: [`0x${private}`],
+      accounts: [`0x${privateKey}`],
     },
     mainnet: {
       url: "https://mainnet.infura.io/v3/460f40a260564ac4a4f4b3fffb032dad", //<---- YOUR INFURA ID! (or it won't work)
@@ -94,11 +95,9 @@ module.exports = {
       },
     },
     matic: {
-      url: 'https://rpc-mainnet.maticvigil.com/',
+      url: 'https://rpc-mumbai.maticvigil.com/',
       gasPrice: 1000000000,
-      accounts: {
-        mnemonic: mnemonic(),
-      },
+      accounts: [`0x${privateKey}`],
     },
   },
   solidity: {

@@ -2,10 +2,6 @@ pragma solidity ^0.6.0;
 
 import './interface/IIdeaToken.sol';
 import '@openzeppelin/contracts/token/ERC20/ERC20.sol';
-import '@uma/core/contracts/financial-templates/common/SyntheticToken.sol';
-import '@uma/core/contracts/financial-templates/common/TokenFactory.sol';
-import '@uma/core/contracts/financial-templates/expiring-multiparty/PricelessPositionManager.sol';
-import '@uma/core/contracts/financial-templates/common/WETH9.sol';
 
 //import "@openzeppelin/contracts/access/Ownable.sol"; //https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol
 

@@ -1,14 +1,9 @@
 /* eslint no-use-before-define: "warn" */
 const fs = require("fs");
 const chalk = require("chalk");
-const { config, ethers } = require("hardhat");
-const { utils, AlchemyProvider } = require("ethers");
+const { ethers } = require("hardhat");
+const { utils } = require("ethers");
 const R = require("ramda");
-const { getAddress, getAbi } = require("@uma/core");
-const Store = require("@uma/core/build/contracts/Store.json");
-const ExpiringMultiPartyCreator = require("@uma/core/build/contracts/ExpiringMultiPartyCreator.json");
-const ExpiringMultiParty = require("@uma/core/build/contracts/ExpiringMultiParty.json");
-const web3 = require("web3");
 
 const main = async () => {
   // To deploy our synthetic just go to this address: 0x1082C1878FAeAC03310468A379cf4D159939FA42
