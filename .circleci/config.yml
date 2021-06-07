@@ -2,7 +2,7 @@
 version: 2.1
 # Use a package of configuration called an orb.
 jobs:
-  - slither:
+  slither:
       docker: 
         - image: trailofbits/eth-security-toolbox
       steps:
