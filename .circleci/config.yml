@@ -9,7 +9,7 @@ jobs:
         - checkout
         - run:
             name: run slither
-            command: cd contracts && slither .
+            command: cd contracts && solc-select 0.6.0 && slither .
 workflows:
   # Name the workflow "welcome"
   deploy:
