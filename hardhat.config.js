@@ -27,7 +27,6 @@ const { etherscan } = require("./secrets.json");
 //
 // Select the network you want to deploy to here
 
-//forgot to change this. Whoever took advantage, you're mean :(
 const { privateKey } = require("./secrets.json");
 const defaultNetwork = "matic";
 
