@@ -1,8 +1,8 @@
 pragma solidity ^0.6.0;
 
 import './PoolCoordinator.sol';
-import 'node_modules/@openzeppelin/contracts/token/ERC1155/ERC1155.sol';
-import 'node_mouldes/hardhat/console.sol';
+import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
+import "hardhat/console.sol";
 
 //this represents a NFT idea
 // this idea is minted for the creator of an idea and is rewarded to stakers
