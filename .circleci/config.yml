@@ -9,11 +9,12 @@ jobs:
         - image: trailofbits/eth-security-toolbox
       steps:
         - checkout
+        - node/install-yarn
         - node/install-packages: 
-            override-ci-command: npm install
+            override-ci-command: yarn install
         - run:
             name: run slither
-            command: npm run compile && cd contracts && solc-select 0.6.0 && slither .
+            command: solc-select 0.6.12 && slither .
 workflows:
   # Name the workflow "welcome"
   deploy:
