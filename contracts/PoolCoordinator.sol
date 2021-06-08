@@ -4,7 +4,7 @@ pragma experimental ABIEncoderV2;
 import './interface/IPoolFactory.sol';
 import './IDEAFactory.sol';
 import './PoolFactory.sol';
-import 'hardhat/console.sol';
+import 'node_modules/hardhat/console.sol';
 
 // move these to seperate file
 library CommonStructs {

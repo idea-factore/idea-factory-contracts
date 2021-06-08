@@ -1,7 +1,7 @@
 pragma solidity ^0.6.0;
 
 import './interface/IIdeaToken.sol';
-import '@openzeppelin/contracts/token/ERC20/ERC20.sol';
+import 'node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol';
 
 //import "@openzeppelin/contracts/access/Ownable.sol"; //https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol
 
