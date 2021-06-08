@@ -13,7 +13,6 @@ require("@nomiclabs/hardhat-etherscan");
 
 
 const { isAddress, getAddress, formatUnits, parseUnits } = utils;
-const { etherscan } = require("./secrets.json");
 
 /*
       📡 This is where you configure your deploy configuration for 🏗 scaffold-eth
@@ -26,8 +25,7 @@ const { etherscan } = require("./secrets.json");
 
 //
 // Select the network you want to deploy to here
-
-const { privateKey } = require("./secrets.json");
+const { etherscan, privateKey } = process.env;
 const defaultNetwork = "matic";
 
 function mnemonic() {
