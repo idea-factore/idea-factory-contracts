@@ -14,7 +14,7 @@ jobs:
             override-ci-command: yarn install
         - run:
             name: run slither
-            command: solc-select 0.6.12 && slither .
+            command: solc-select 0.6.12 && slither . --print human-summary
 workflows:
   # Name the workflow "welcome"
   deploy:
