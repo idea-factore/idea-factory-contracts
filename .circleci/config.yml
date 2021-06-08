@@ -9,11 +9,9 @@ jobs:
         - image: trailofbits/eth-security-toolbox
       steps:
         - checkout
-        - node/install-packages:
-            pkg-manager: yarn
         - run:
             name: run slither
-            command: cd contracts && solc-select 0.6.0 && slither .
+            command: apt install yarn && yarn install && cd contracts && solc-select 0.6.0 && slither .
 workflows:
   # Name the workflow "welcome"
   deploy:
