@@ -9,7 +9,8 @@ jobs:
         - image: trailofbits/eth-security-toolbox
       steps:
         - checkout
-        - node/install-packages
+        - node/install-packages: 
+            override-ci-command: npm install
         - run:
             name: run slither
             command: cd contracts && solc-select 0.6.0 && slither .
